@@ -1,0 +1,95 @@
+
+
+###
+## nodelist/hash
+GET  http://192.168.2.35:9094/api/v0/nodes/QmWsB5PCG837PxVM4RDCFwzaU4x2CEbx3srpkrJVjKFjEw
+Accept: */*
+User-Agent: idea httpclient
+Connection: Keep-Alive
+
+###
+
+###
+## pin/ls all
+GET  http://192.168.2.35:9094/api/v0/pins/QmRoiGtAJfUZL3rBiSRi3TyU9QXkWAdxjoGjfwRfqc4VZB
+Accept: */*
+User-Agent: idea httpclient
+Connection: Keep-Alive
+
+###
+
+
+## pin/ls all
+GET  http://192.168.2.35:9094/api/v0/pins
+Accept: */*
+User-Agent: idea httpclient
+Connection: Keep-Alive
+
+###
+
+## 查询一个cid的详细副本情况
+# GET  http://10.80.7.26:9094/api/v0/pins/QmPeasKh78PSeVteH4vjs7FrnWarcRLVn6BzXandMKKn2U
+GET  http://192.168.2.35:9094/api/v0/pins/QmZDiLATmRogoYeXUiMbfRfuRNP4cGvRe1gwDPqLkvYH1D
+Accept: */*
+User-Agent: idea httpclient
+Connection: Keep-Alive
+
+###
+
+## 添加cid副本备份
+POST  http://192.168.2.35:9094/api/v0/pins/QmQbnTN8ZjNikjYtaLiB5CUsP6SUN97uMZZ68p1DFEVTSd?replication-min=3&replication-max=4&meta-orderId=1111111&origins=/ip4/10.80.7.32/tcp/4001/p2p/12D3KooWH9Zcbc4FKaKAMZ3bCYjXP9RuYN4bHApca7U2o4kw631c
+Accept: */*
+User-Agent: idea httpclient
+Connection: Keep-Alive
+Content-Type: application/x-www-form-urlencoded
+
+
+
+###
+
+## 删除cid
+# DELETE  http://192.168.2.35:9094/api/v0/pins/QmQbnTN8ZjNikjYtaLiB5CUsP6SUN97uMZZ68p1DFEVTSd
+# Accept: */*
+# User-Agent: idea httpclient
+# Connection: Keep-Alive
+
+
+###
+
+
+
+## 查询一个cid的真实副本情况
+GET  http://192.168.2.35:9094/api/v0/status/QmQbnTN8ZjNikjYtaLiB5CUsP6SUN97uMZZ68p1DFEVTSd
+Accept: */*
+User-Agent: idea httpclient
+Connection: Keep-Alive
+
+###
+
+
+
+POST  http://192.168.2.98:8611/task_tracker/v1/callbackUpload
+Accept: */*
+User-Agent: idea httpclient
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "order_id": "1669355734127360600",
+    "fid": "fid12334354",
+    "cid": "QmRAppJdJdoZ8bv1t4AtY8Xb2gNLN4pw2rjVETJAdKzvjd",
+    "status": 1,
+    "region": "chendu",
+    "origins": "/ip4/125.71.152.251/tcp/21184/p2p/12D3KooWBxyXDLBuwrTyFgy44L4Hej5X7MMiVXYfra7bihMTAy8K,/ip4/125.71.152.251/udp/22336/quic/p2p/12D3KooWBxyXDLBuwrTyFgy44L4Hej5X7MMiVXYfra7bihMTAy8K,/ip4/125.71.152.251/udp/23425/quic/p2p/12D3KooWBxyXDLBuwrTyFgy44L4Hej5X7MMiVXYfra7bihMTAy8K,/ip4/192.168.1.4/tcp/4001/p2p/12D3KooWBxyXDLBuwrTyFgy44L4Hej5X7MMiVXYfra7bihMTAy8K,/ip4/192.168.1.4/udp/4001/quic/p2p/12D3KooWBxyXDLBuwrTyFgy44L4Hej5X7MMiVXYfra7bihMTAy8K"
+}
+
+###
+
+
+
+
+
+
+
+
+
